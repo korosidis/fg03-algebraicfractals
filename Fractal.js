@@ -1,5 +1,5 @@
 let fractal = 'newtonPool';
-let Coloring = 'classic';
+let coloring = 'classic';
 let Scale = 2;
 let Field = {
     left: -2,
@@ -202,12 +202,12 @@ function paintZebra(itter) {
 
 function changeColor(color) {
 	resetScale();
-    Coloring = color;
+    coloring = color;
     run(0, 0, fractal);
 }
 
 function choseColor(pointData, n) {
-    switch (Coloring) {
+    switch (coloring) {
         case 'classic':
             return paintClassic(pointData, fractal);
         case 'levels':
